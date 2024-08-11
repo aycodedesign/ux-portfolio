@@ -11509,8 +11509,14 @@ body#index .background {
   body#index section.section {
     top: 20%;
   }
+  body#index .animated-link {
+    font-size: 0.9rem;
+  }
   nav {
     max-width: 95%;
+  }
+  nav > .level-item > a {
+    font-size: 0.75rem !important;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
