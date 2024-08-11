@@ -11051,12 +11051,18 @@ body#about #rounded {
   .blur-background {
     background-position: 50% 0;
   }
+  #fourcd .blur-background {
+    background-position: 35% 0;
+  }
 }
 @media only screen and (min-width: 501px) and (max-width: 768px) {
   .main-content {
     padding-top: 70vh;
     /* value based on hero image height */
     z-index: 0;
+  }
+  #filmvote .blur-background {
+    background-position: 52% 0;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
