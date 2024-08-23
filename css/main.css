@@ -10641,42 +10641,12 @@ html {
   font-family: "Kanit", sans-serif !important;
 }
 
-.heading-1 {
-  color: rgb(245, 170, 40);
-  font-size: 3rem;
-  font-weight: 500;
-}
-.heading-1.bold {
-  font-weight: 700;
-  letter-spacing: 0.75rem;
-}
-.heading-1 > strong {
-  font-weight: 500;
-}
-
-.heading-2 {
-  color: rgb(38, 47, 51) !important;
-  line-height: 4.5rem;
-  font-size: 6rem;
-  font-weight: 300;
-  letter-spacing: 0.25rem;
-}
-.heading-2.bold {
-  font-weight: 700;
-  letter-spacing: 0.67rem;
-}
-
 .letter-stroke {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(38, 47, 51);
 }
 
-@media only screen and (max-width: 768px) {
-  .heading-1 {
-    font-size: 2rem !important;
-  }
-}
 /**
  * Basic typography style for copy text
  */
@@ -10801,7 +10771,7 @@ body#fourcd .content blockquote .numberCircle.invert {
   background: #68edcb;
 }
 body#about .title {
-  color: rgb(38, 47, 51);
+  color: #fff;
 }
 body#about .subtitle {
   font-size: 1.25rem;
@@ -10823,6 +10793,31 @@ body#about .content p {
 }
 body#about #rounded {
   border-radius: 3%;
+}
+
+.heading-1 {
+  color: rgb(245, 170, 40);
+  font-size: 3rem;
+  font-weight: 500;
+}
+.heading-1.bold {
+  font-weight: 700;
+  letter-spacing: 0.75rem;
+}
+.heading-1 > strong {
+  font-weight: 500;
+}
+
+.heading-2 {
+  color: rgb(38, 47, 51) !important;
+  line-height: 4.5rem;
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: 0.25rem;
+}
+.heading-2.bold {
+  font-weight: 700;
+  letter-spacing: 0.67rem;
 }
 
 .content h2 {
@@ -10860,6 +10855,9 @@ body#about #rounded {
   }
   .content p {
     font-size: 1.25rem;
+  }
+  .heading-1 {
+    font-size: 2rem !important;
   }
 }
 /**
@@ -11038,7 +11036,7 @@ body#about #rounded {
 }
 
 #about .blur-background {
-  background-image: url("../../../../img/hero/hero-about.jpg");
+  background-image: url("../../../../img/hero/hero-about2.jpg");
   background-position: 50% 0%;
 }
 
@@ -11151,19 +11149,9 @@ nav::after {
   bottom: 0;
   animation: borderBottomAnimation 0.75s forwards;
 }
-nav .navbar-item.has-dropdown-up .navbar-dropdown {
-  border: #fff 1px solid;
-  background-color: rgb(38, 47, 51) !important;
-  opacity: 0.9;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
 nav .navbar-item {
   padding-left: 0;
   padding-right: 0;
-}
-nav .navbar-dropdown:hover {
-  background-color: transparent !important;
 }
 
 .level.is-mobile .level-item:not(:last-child) {
@@ -11291,13 +11279,16 @@ body#fourcd button.button:hover, body#fourcd button.button:active, body#fourcd b
   color: rgb(255, 248, 228) !important;
 }
 .box.about {
-  background-color: rgb(38, 47, 51) !important;
+  background-color: rgb(255, 248, 228);
 }
 .box.about > span > a.animated-link {
-  color: rgb(245, 170, 40);
+  color: rgb(38, 47, 51);
 }
 .box.about > span > a.animated-link::before {
-  background-color: rgb(245, 170, 40) !important;
+  background-color: rgb(38, 47, 51) !important;
+}
+.box.about .heading-1 {
+  color: rgb(38, 47, 51);
 }
 .box button {
   width: 100%;
@@ -11541,36 +11532,38 @@ body#about footer.footer {
 }
 body#about nav {
   position: absolute;
-  bottom: 3rem;
-  width: 600px;
-  padding: 0.75rem 0 0.5rem 0;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 600px;
+  margin: 2rem auto !important;
+  padding: 0.75rem 0 0.5rem 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
-body#about nav hr {
+body#about nav::before, body#about nav::after {
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0;
 }
-body#about nav.navbar .navbar-menu {
-  height: 40px;
+body#about nav::before {
+  top: 0;
+  animation: borderTopAnimation 0.75s forwards;
 }
-body#about nav.navbar .navbar-menu .navbar-link:hover {
-  background-color: transparent !important;
-}
-body#about nav.animated-link {
-  color: rgb(38, 47, 51) !important;
-}
-body#about nav.animated-link:hover {
-  color: rgb(38, 47, 51);
-}
-body#about nav.animated-link::before {
-  background-color: rgb(38, 47, 51);
+body#about nav::after {
+  bottom: 0;
+  animation: borderBottomAnimation 0.75s forwards;
 }
 body#about nav > .level-item > a {
-  color: rgb(38, 47, 51);
+  color: #fff;
 }
 body#about p {
-  color: rgb(38, 47, 51) !important;
-  font-weight: 500;
+  color: #fff;
+  font-weight: 300;
 }
 body#about .animated-link {
   position: relative;
@@ -11583,7 +11576,7 @@ body#about .animated-link::before {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: rgb(38, 47, 51);
+  background-color: #fff;
   transition: width 0.2s;
 }
 body#about .animated-link:hover::before {
