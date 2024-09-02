@@ -10667,8 +10667,8 @@ body mark {
 body blockquote {
   text-align: center;
   font-weight: 300;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
   padding: 0.5rem 1rem;
   background-color: transparent !important;
   color: #fff;
