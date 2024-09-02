@@ -10850,7 +10850,7 @@ body#about #rounded {
 
 @media only screen and (max-width: 768px) {
   .title {
-    color: #e02828;
+    color: rgb(224, 40, 40);
     font-size: 3rem !important;
   }
   .content p {
@@ -10995,6 +10995,18 @@ body#about #rounded {
 .about-bg.invert li,
 .about-bg.invert figcaption {
   color: rgb(38, 47, 51);
+}
+
+section.followup-bg {
+  background-color: rgb(248, 248, 255);
+}
+section.followup-bg h3,
+section.followup-bg h5,
+section.followup-bg p {
+  color: rgb(68, 68, 68) !important;
+}
+section.followup-bg .numberCircle {
+  background-color: rgb(153, 153, 153) !important;
 }
 
 .index-bg {
