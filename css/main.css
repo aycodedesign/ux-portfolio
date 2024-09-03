@@ -10841,7 +10841,7 @@ body#about #rounded {
   color: #fff;
   font-weight: 300;
   font-size: 1.15rem;
-  line-height: 2rem;
+  line-height: 1.75rem;
 }
 .content p strong {
   color: inherit;
@@ -11342,6 +11342,12 @@ figure.image {
 }
 
 @media screen and (max-width: 768px) {
+  video {
+    border-radius: 35px;
+  }
+  .center {
+    text-align: center;
+  }
   .columns.is-mobile {
     overflow-x: auto;
     white-space: nowrap;
@@ -11362,10 +11368,10 @@ figure.image {
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .content video {
+  video {
     border-radius: 35px;
   }
-  .content .center {
+  .center {
     text-align: center;
   }
   #home-logo {
@@ -11373,8 +11379,11 @@ figure.image {
   }
 }
 @media only screen and (min-width: 1025px) {
-  .content video {
+  video {
     border-radius: 35px;
+  }
+  .center {
+    text-align: center;
   }
   img#aycd-logo {
     position: fixed;
