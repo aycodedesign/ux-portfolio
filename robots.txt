@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/  # Block admin panel or sensitive areas if applicable
+Disallow: /cgi-bin/  # Block common server-side scripts folder if used
+Allow: /
+
+Sitemap: https://aycode.design/sitemap.xml
